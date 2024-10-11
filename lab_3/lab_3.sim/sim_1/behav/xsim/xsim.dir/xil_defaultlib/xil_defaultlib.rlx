@@ -1,0 +1,15 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd,1727797823,vhdl,,,,flipflop,,,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd,1726372781,vhdl,,,,addfull,,,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd,1725984844,vhdl,,,,addsubtract,,,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtractFull.vhd,1726374922,vhdl,,,,addsubtractfull,,,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/Multiplication.vhd,1728631140,vhdl,,,,multiplication,,,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/control.vhd,1728626015,vhdl,,,,control,,,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/myRegister.vhd,1728366823,vhdl,,,,myregister,,,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register.vhd,1728315743,vhdl,,,,shift_register,,,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd,1728621379,vhdl,,,,shift_register_left,,,,,,,,
+/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd,1728619900,vhdl,,,,shift_register_right,,,,,,,,

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="shift_register_right_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="shift_register_right" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="8846400fs"></ZoomStartTime>
+      <ZoomEndTime time="45748623fs"></ZoomEndTime>
+      <Cursor1Time time="38787000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="155"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject type="logic" fp_name="/shift_register_right/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/shift_register_right/LD">
+      <obj_property name="ElementShortName">LD</obj_property>
+      <obj_property name="ObjectShortName">LD</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/shift_register_right/SN">
+      <obj_property name="ElementShortName">SN</obj_property>
+      <obj_property name="ObjectShortName">SN</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/shift_register_right/D">
+      <obj_property name="ElementShortName">D[63:0]</obj_property>
+      <obj_property name="ObjectShortName">D[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/shift_register_right/EN">
+      <obj_property name="ElementShortName">EN</obj_property>
+      <obj_property name="ObjectShortName">EN</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/shift_register_right/RST">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/shift_register_right/Q">
+      <obj_property name="ElementShortName">Q[63:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/shift_register_right/Qout">
+      <obj_property name="ElementShortName">Qout[63:0]</obj_property>
+      <obj_property name="ObjectShortName">Qout[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/shift_register_right/Din">
+      <obj_property name="ElementShortName">Din[63:0]</obj_property>
+      <obj_property name="ObjectShortName">Din[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/shift_register_right/WIDTH">
+      <obj_property name="ElementShortName">WIDTH</obj_property>
+      <obj_property name="ObjectShortName">WIDTH</obj_property>
+   </wvobject>
+</wave_config>

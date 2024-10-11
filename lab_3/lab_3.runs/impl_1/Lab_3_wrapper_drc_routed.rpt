@@ -1,0 +1,51 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Oct 11 04:10:16 2024
+| Host         : JoshsArchUSB running 64-bit unknown
+| Command      : report_drc -file Lab_3_wrapper_drc_routed.rpt -pb Lab_3_wrapper_drc_routed.pb -rpx Lab_3_wrapper_drc_routed.rpx
+| Design       : Lab_3_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 3          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Lab_3_i/Multiplication_0/U0/controlTest/FSM_onehot_state_reg[3]_0 is a gated clock net sourced by a combinational pin Lab_3_i/Multiplication_0/U0/controlTest/Din_reg[0]_i_2/O, cell Lab_3_i/Multiplication_0/U0/controlTest/Din_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Lab_3_i/Multiplication_0/U0/controlTest/FSM_onehot_state_reg[4]_0 is a gated clock net sourced by a combinational pin Lab_3_i/Multiplication_0/U0/controlTest/generateFlipflops[0].Din_reg[0]_i_2/O, cell Lab_3_i/Multiplication_0/U0/controlTest/generateFlipflops[0].Din_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Lab_3_i/Multiplication_0/U0/controlTest/iterations_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin Lab_3_i/Multiplication_0/U0/controlTest/iterations_reg[31]_i_2/O, cell Lab_3_i/Multiplication_0/U0/controlTest/iterations_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

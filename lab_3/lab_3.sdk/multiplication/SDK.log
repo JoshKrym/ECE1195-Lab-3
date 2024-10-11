@@ -1,0 +1,5 @@
+05:38:48 INFO  : Registering command handlers for SDK TCF services
+05:38:49 INFO  : Launching XSCT server: xsct -n -interactive /home/josh/projects/ece1195/lab3/lab_3/lab_3.sdk/multiplication/temp_xsdb_launch_script.tcl
+05:38:50 INFO  : XSCT server has started successfully.
+05:38:50 INFO  : Successfully done setting XSCT server connection channel  
+05:38:50 INFO  : Successfully done setting SDK workspace  

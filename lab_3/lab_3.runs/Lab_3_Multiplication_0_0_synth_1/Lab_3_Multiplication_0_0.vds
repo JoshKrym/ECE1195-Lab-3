@@ -1,0 +1,736 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct 11 03:22:41 2024
+# Process ID: 172120
+# Current directory: /home/josh/projects/ece1195/lab3/lab_3/lab_3.runs/Lab_3_Multiplication_0_0_synth_1
+# Command line: vivado -log Lab_3_Multiplication_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab_3_Multiplication_0_0.tcl
+# Log file: /home/josh/projects/ece1195/lab3/lab_3/lab_3.runs/Lab_3_Multiplication_0_0_synth_1/Lab_3_Multiplication_0_0.vds
+# Journal file: /home/josh/projects/ece1195/lab3/lab_3/lab_3.runs/Lab_3_Multiplication_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source Lab_3_Multiplication_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/josh/projects/ece1195/Lab-1/Lab_1_repo/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/josh/packages/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top Lab_3_Multiplication_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 172159 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:01 . Memory (MB): peak = 1339.746 ; gain = 23.840 ; free physical = 15715 ; free virtual = 38332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Lab_3_Multiplication_0_0' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/bd/Lab_3/ip/Lab_3_Multiplication_0_0/synth/Lab_3_Multiplication_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'Multiplication' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/Multiplication.vhd:34' bound to instance 'U0' of component 'Multiplication' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/bd/Lab_3/ip/Lab_3_Multiplication_0_0/synth/Lab_3_Multiplication_0_0.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Multiplication' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/Multiplication.vhd:45]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'shift_register_left' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:14' bound to instance 'Multiplicand' of component 'shift_register_left' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/Multiplication.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'shift_register_left' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:31]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'flipflop' (1#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:19]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-3491] module 'flipflop' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/lab3/flipflop.vhd:5' bound to instance 'ff' of component 'flipflop' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'shift_register_left' (2#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:31]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'addSubtractFull' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtractFull.vhd:4' bound to instance 'MyALU' of component 'addSubtractFull' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/Multiplication.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'addSubtractFull' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtractFull.vhd:18]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'addFull' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:4' bound to instance 'su' of component 'addFull' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtractFull.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'addFull' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:17]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'addSubtract' (3#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:15]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Synth 8-3491] module 'addSubtract' declared at '/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtract.vhd:5' bound to instance 'as' of component 'addSubtract' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:28]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'addFull' (4#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addFull.vhd:17]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'addSubtractFull' (5#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/imports/new/addSubtractFull.vhd:18]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'myRegister' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/myRegister.vhd:30]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'myRegister' (6#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/myRegister.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'control' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/control.vhd:24]
+WARNING: [Synth 8-614] signal 'iterations' is read in the process but is not in the sensitivity list [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/control.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'control' (7#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/control.vhd:24]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'shift_register_right' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:31]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shift_register_right' (8#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Multiplication' (9#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/Multiplication.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Lab_3_Multiplication_0_0' (10#1) [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/bd/Lab_3/ip/Lab_3_Multiplication_0_0/synth/Lab_3_Multiplication_0_0.vhd:67]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1385.496 ; gain = 69.590 ; free physical = 15714 ; free virtual = 38329
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1385.496 ; gain = 69.590 ; free physical = 15711 ; free virtual = 38326
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1385.496 ; gain = 69.590 ; free physical = 15711 ; free virtual = 38326
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1750.262 ; gain = 0.000 ; free physical = 15563 ; free virtual = 38181
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1750.262 ; gain = 0.000 ; free physical = 15563 ; free virtual = 38181
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1754.262 ; gain = 4.000 ; free physical = 15561 ; free virtual = 38178
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15597 ; free virtual = 38214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15597 ; free virtual = 38214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15597 ; free virtual = 38215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+INFO: [Synth 8-5544] ROM "iterations" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MrSftRt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PrdtWrt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MdSftLft" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[1].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[2].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[3].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[4].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[5].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[6].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[7].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[8].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[9].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[10].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[11].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[12].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[13].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[14].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[15].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[16].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[17].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[18].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[19].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[20].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[21].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[22].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[23].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[24].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[25].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[26].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[27].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[28].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[29].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[30].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[31].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[32].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[33].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[34].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[35].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[36].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[37].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[38].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[39].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[40].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[41].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[42].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[43].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[44].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[45].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[46].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[47].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[48].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[49].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[50].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[51].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[52].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[53].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[54].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[55].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[56].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[57].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[58].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[59].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[60].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[61].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[62].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[63].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_left.vhd:50]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      ss |                          0000001 |                              000
+                      s1 |                          0000010 |                              001
+                     s1a |                          0000100 |                              010
+                      s2 |                          0001000 |                              011
+                      s3 |                          0010000 |                              100
+                      s4 |                          0100000 |                              101
+                      sd |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control'
+WARNING: [Synth 8-327] inferring latch for variable 'iterations_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/control.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[0].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[1].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[2].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[3].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[4].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[5].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[6].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[7].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[8].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[9].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[10].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[11].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[12].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[13].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[14].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[15].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[16].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[17].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[18].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[19].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[20].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[21].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[22].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[23].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[24].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[25].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[26].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[27].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[28].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[29].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'generateFlipflops[30].Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'Din_reg' [/home/josh/projects/ece1195/lab3/lab_3/lab_3.srcs/sources_1/new/shift_register_right.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15593 ; free virtual = 38212
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 128   
++---Registers : 
+	                1 Bit    Registers := 160   
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 160   
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module flipflop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module shift_register_left 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+Module addSubtract 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module addSubtractFull 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module myRegister 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+Module control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+Module shift_register_right 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:49 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15610 ; free virtual = 38230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15517 ; free virtual = 38137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:51 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15513 ; free virtual = 38133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:51 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15505 ; free virtual = 38125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15505 ; free virtual = 38125
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15505 ; free virtual = 38125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15505 ; free virtual = 38125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15505 ; free virtual = 38125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15505 ; free virtual = 38125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15505 ; free virtual = 38125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    12|
+|2     |LUT1   |     1|
+|3     |LUT2   |    53|
+|4     |LUT3   |    68|
+|5     |LUT4   |    63|
+|6     |LUT5   |    60|
+|7     |LUT6   |     2|
+|8     |FDCE   |    70|
+|9     |FDPE   |     1|
+|10    |FDRE   |    96|
+|11    |LD     |   128|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+---------------------+------+
+|      |Instance                         |Module               |Cells |
++------+---------------------------------+---------------------+------+
+|1     |top                              |                     |   554|
+|2     |  U0                             |Multiplication       |   554|
+|3     |    Multiplicand                 |shift_register_left  |   131|
+|4     |      ff                         |flipflop_95          |     4|
+|5     |      \generateFlipflops[10].ff  |flipflop_96          |     1|
+|6     |      \generateFlipflops[11].ff  |flipflop_97          |     1|
+|7     |      \generateFlipflops[12].ff  |flipflop_98          |     1|
+|8     |      \generateFlipflops[13].ff  |flipflop_99          |     1|
+|9     |      \generateFlipflops[14].ff  |flipflop_100         |     1|
+|10    |      \generateFlipflops[15].ff  |flipflop_101         |     1|
+|11    |      \generateFlipflops[16].ff  |flipflop_102         |     1|
+|12    |      \generateFlipflops[17].ff  |flipflop_103         |     1|
+|13    |      \generateFlipflops[18].ff  |flipflop_104         |     1|
+|14    |      \generateFlipflops[19].ff  |flipflop_105         |     1|
+|15    |      \generateFlipflops[1].ff   |flipflop_106         |     1|
+|16    |      \generateFlipflops[20].ff  |flipflop_107         |     1|
+|17    |      \generateFlipflops[21].ff  |flipflop_108         |     1|
+|18    |      \generateFlipflops[22].ff  |flipflop_109         |     1|
+|19    |      \generateFlipflops[23].ff  |flipflop_110         |     1|
+|20    |      \generateFlipflops[24].ff  |flipflop_111         |     1|
+|21    |      \generateFlipflops[25].ff  |flipflop_112         |     1|
+|22    |      \generateFlipflops[26].ff  |flipflop_113         |     1|
+|23    |      \generateFlipflops[27].ff  |flipflop_114         |     1|
+|24    |      \generateFlipflops[28].ff  |flipflop_115         |     1|
+|25    |      \generateFlipflops[29].ff  |flipflop_116         |     1|
+|26    |      \generateFlipflops[2].ff   |flipflop_117         |     1|
+|27    |      \generateFlipflops[30].ff  |flipflop_118         |     1|
+|28    |      \generateFlipflops[31].ff  |flipflop_119         |     1|
+|29    |      \generateFlipflops[32].ff  |flipflop_120         |     1|
+|30    |      \generateFlipflops[33].ff  |flipflop_121         |     1|
+|31    |      \generateFlipflops[34].ff  |flipflop_122         |     1|
+|32    |      \generateFlipflops[35].ff  |flipflop_123         |     1|
+|33    |      \generateFlipflops[36].ff  |flipflop_124         |     1|
+|34    |      \generateFlipflops[37].ff  |flipflop_125         |     1|
+|35    |      \generateFlipflops[38].ff  |flipflop_126         |     1|
+|36    |      \generateFlipflops[39].ff  |flipflop_127         |     1|
+|37    |      \generateFlipflops[3].ff   |flipflop_128         |     1|
+|38    |      \generateFlipflops[40].ff  |flipflop_129         |     1|
+|39    |      \generateFlipflops[41].ff  |flipflop_130         |     1|
+|40    |      \generateFlipflops[42].ff  |flipflop_131         |     1|
+|41    |      \generateFlipflops[43].ff  |flipflop_132         |     1|
+|42    |      \generateFlipflops[44].ff  |flipflop_133         |     1|
+|43    |      \generateFlipflops[45].ff  |flipflop_134         |     1|
+|44    |      \generateFlipflops[46].ff  |flipflop_135         |     1|
+|45    |      \generateFlipflops[47].ff  |flipflop_136         |     1|
+|46    |      \generateFlipflops[48].ff  |flipflop_137         |     1|
+|47    |      \generateFlipflops[49].ff  |flipflop_138         |     1|
+|48    |      \generateFlipflops[4].ff   |flipflop_139         |     1|
+|49    |      \generateFlipflops[50].ff  |flipflop_140         |     1|
+|50    |      \generateFlipflops[51].ff  |flipflop_141         |     1|
+|51    |      \generateFlipflops[52].ff  |flipflop_142         |     1|
+|52    |      \generateFlipflops[53].ff  |flipflop_143         |     1|
+|53    |      \generateFlipflops[54].ff  |flipflop_144         |     1|
+|54    |      \generateFlipflops[55].ff  |flipflop_145         |     1|
+|55    |      \generateFlipflops[56].ff  |flipflop_146         |     1|
+|56    |      \generateFlipflops[57].ff  |flipflop_147         |     1|
+|57    |      \generateFlipflops[58].ff  |flipflop_148         |     1|
+|58    |      \generateFlipflops[59].ff  |flipflop_149         |     1|
+|59    |      \generateFlipflops[5].ff   |flipflop_150         |     1|
+|60    |      \generateFlipflops[60].ff  |flipflop_151         |     1|
+|61    |      \generateFlipflops[61].ff  |flipflop_152         |     1|
+|62    |      \generateFlipflops[62].ff  |flipflop_153         |     1|
+|63    |      \generateFlipflops[63].ff  |flipflop_154         |     1|
+|64    |      \generateFlipflops[6].ff   |flipflop_155         |     1|
+|65    |      \generateFlipflops[7].ff   |flipflop_156         |     1|
+|66    |      \generateFlipflops[8].ff   |flipflop_157         |     1|
+|67    |      \generateFlipflops[9].ff   |flipflop_158         |     1|
+|68    |    Multiplier                   |shift_register_right |    64|
+|69    |      ff                         |flipflop_63          |     1|
+|70    |      \generateFlipflops[0].ff   |flipflop_64          |     1|
+|71    |      \generateFlipflops[10].ff  |flipflop_65          |     1|
+|72    |      \generateFlipflops[11].ff  |flipflop_66          |     1|
+|73    |      \generateFlipflops[12].ff  |flipflop_67          |     1|
+|74    |      \generateFlipflops[13].ff  |flipflop_68          |     1|
+|75    |      \generateFlipflops[14].ff  |flipflop_69          |     1|
+|76    |      \generateFlipflops[15].ff  |flipflop_70          |     1|
+|77    |      \generateFlipflops[16].ff  |flipflop_71          |     1|
+|78    |      \generateFlipflops[17].ff  |flipflop_72          |     1|
+|79    |      \generateFlipflops[18].ff  |flipflop_73          |     1|
+|80    |      \generateFlipflops[19].ff  |flipflop_74          |     1|
+|81    |      \generateFlipflops[1].ff   |flipflop_75          |     1|
+|82    |      \generateFlipflops[20].ff  |flipflop_76          |     1|
+|83    |      \generateFlipflops[21].ff  |flipflop_77          |     1|
+|84    |      \generateFlipflops[22].ff  |flipflop_78          |     1|
+|85    |      \generateFlipflops[23].ff  |flipflop_79          |     1|
+|86    |      \generateFlipflops[24].ff  |flipflop_80          |     1|
+|87    |      \generateFlipflops[25].ff  |flipflop_81          |     1|
+|88    |      \generateFlipflops[26].ff  |flipflop_82          |     1|
+|89    |      \generateFlipflops[27].ff  |flipflop_83          |     1|
+|90    |      \generateFlipflops[28].ff  |flipflop_84          |     1|
+|91    |      \generateFlipflops[29].ff  |flipflop_85          |     1|
+|92    |      \generateFlipflops[2].ff   |flipflop_86          |     1|
+|93    |      \generateFlipflops[30].ff  |flipflop_87          |     1|
+|94    |      \generateFlipflops[3].ff   |flipflop_88          |     1|
+|95    |      \generateFlipflops[4].ff   |flipflop_89          |     1|
+|96    |      \generateFlipflops[5].ff   |flipflop_90          |     1|
+|97    |      \generateFlipflops[6].ff   |flipflop_91          |     1|
+|98    |      \generateFlipflops[7].ff   |flipflop_92          |     1|
+|99    |      \generateFlipflops[8].ff   |flipflop_93          |     1|
+|100   |      \generateFlipflops[9].ff   |flipflop_94          |     1|
+|101   |    MyProduct                    |myRegister           |   156|
+|102   |      ff                         |flipflop             |     1|
+|103   |      \generateFlipflops[0].ff   |flipflop_0           |     1|
+|104   |      \generateFlipflops[10].ff  |flipflop_1           |     1|
+|105   |      \generateFlipflops[11].ff  |flipflop_2           |     4|
+|106   |      \generateFlipflops[12].ff  |flipflop_3           |     1|
+|107   |      \generateFlipflops[13].ff  |flipflop_4           |     4|
+|108   |      \generateFlipflops[14].ff  |flipflop_5           |     1|
+|109   |      \generateFlipflops[15].ff  |flipflop_6           |     4|
+|110   |      \generateFlipflops[16].ff  |flipflop_7           |     1|
+|111   |      \generateFlipflops[17].ff  |flipflop_8           |     4|
+|112   |      \generateFlipflops[18].ff  |flipflop_9           |     1|
+|113   |      \generateFlipflops[19].ff  |flipflop_10          |     4|
+|114   |      \generateFlipflops[1].ff   |flipflop_11          |     3|
+|115   |      \generateFlipflops[20].ff  |flipflop_12          |     1|
+|116   |      \generateFlipflops[21].ff  |flipflop_13          |     4|
+|117   |      \generateFlipflops[22].ff  |flipflop_14          |     1|
+|118   |      \generateFlipflops[23].ff  |flipflop_15          |     4|
+|119   |      \generateFlipflops[24].ff  |flipflop_16          |     1|
+|120   |      \generateFlipflops[25].ff  |flipflop_17          |     4|
+|121   |      \generateFlipflops[26].ff  |flipflop_18          |     1|
+|122   |      \generateFlipflops[27].ff  |flipflop_19          |     4|
+|123   |      \generateFlipflops[28].ff  |flipflop_20          |     1|
+|124   |      \generateFlipflops[29].ff  |flipflop_21          |     4|
+|125   |      \generateFlipflops[2].ff   |flipflop_22          |     1|
+|126   |      \generateFlipflops[30].ff  |flipflop_23          |     1|
+|127   |      \generateFlipflops[31].ff  |flipflop_24          |     4|
+|128   |      \generateFlipflops[32].ff  |flipflop_25          |     1|
+|129   |      \generateFlipflops[33].ff  |flipflop_26          |     4|
+|130   |      \generateFlipflops[34].ff  |flipflop_27          |     1|
+|131   |      \generateFlipflops[35].ff  |flipflop_28          |     4|
+|132   |      \generateFlipflops[36].ff  |flipflop_29          |     1|
+|133   |      \generateFlipflops[37].ff  |flipflop_30          |     4|
+|134   |      \generateFlipflops[38].ff  |flipflop_31          |     1|
+|135   |      \generateFlipflops[39].ff  |flipflop_32          |     4|
+|136   |      \generateFlipflops[3].ff   |flipflop_33          |     4|
+|137   |      \generateFlipflops[40].ff  |flipflop_34          |     1|
+|138   |      \generateFlipflops[41].ff  |flipflop_35          |     4|
+|139   |      \generateFlipflops[42].ff  |flipflop_36          |     1|
+|140   |      \generateFlipflops[43].ff  |flipflop_37          |     4|
+|141   |      \generateFlipflops[44].ff  |flipflop_38          |     1|
+|142   |      \generateFlipflops[45].ff  |flipflop_39          |     4|
+|143   |      \generateFlipflops[46].ff  |flipflop_40          |     1|
+|144   |      \generateFlipflops[47].ff  |flipflop_41          |     4|
+|145   |      \generateFlipflops[48].ff  |flipflop_42          |     1|
+|146   |      \generateFlipflops[49].ff  |flipflop_43          |     4|
+|147   |      \generateFlipflops[4].ff   |flipflop_44          |     1|
+|148   |      \generateFlipflops[50].ff  |flipflop_45          |     1|
+|149   |      \generateFlipflops[51].ff  |flipflop_46          |     4|
+|150   |      \generateFlipflops[52].ff  |flipflop_47          |     1|
+|151   |      \generateFlipflops[53].ff  |flipflop_48          |     4|
+|152   |      \generateFlipflops[54].ff  |flipflop_49          |     1|
+|153   |      \generateFlipflops[55].ff  |flipflop_50          |     4|
+|154   |      \generateFlipflops[56].ff  |flipflop_51          |     1|
+|155   |      \generateFlipflops[57].ff  |flipflop_52          |     4|
+|156   |      \generateFlipflops[58].ff  |flipflop_53          |     1|
+|157   |      \generateFlipflops[59].ff  |flipflop_54          |     5|
+|158   |      \generateFlipflops[5].ff   |flipflop_55          |     4|
+|159   |      \generateFlipflops[60].ff  |flipflop_56          |     1|
+|160   |      \generateFlipflops[61].ff  |flipflop_57          |     2|
+|161   |      \generateFlipflops[62].ff  |flipflop_58          |     2|
+|162   |      \generateFlipflops[6].ff   |flipflop_59          |     1|
+|163   |      \generateFlipflops[7].ff   |flipflop_60          |     4|
+|164   |      \generateFlipflops[8].ff   |flipflop_61          |     1|
+|165   |      \generateFlipflops[9].ff   |flipflop_62          |     4|
+|166   |    controlTest                  |control              |   203|
++------+---------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15505 ; free virtual = 38125
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 97 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1754.262 ; gain = 69.590 ; free physical = 15533 ; free virtual = 38153
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.262 ; gain = 438.355 ; free physical = 15533 ; free virtual = 38153
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1754.262 ; gain = 0.000 ; free physical = 15522 ; free virtual = 38142
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LD => LDCE: 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 99 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:52 . Memory (MB): peak = 1754.262 ; gain = 438.516 ; free physical = 15522 ; free virtual = 38142
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1754.262 ; gain = 0.000 ; free physical = 15522 ; free virtual = 38142
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/josh/projects/ece1195/lab3/lab_3/lab_3.runs/Lab_3_Multiplication_0_0_synth_1/Lab_3_Multiplication_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 165 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1778.273 ; gain = 0.000 ; free physical = 15518 ; free virtual = 38139
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/josh/projects/ece1195/lab3/lab_3/lab_3.runs/Lab_3_Multiplication_0_0_synth_1/Lab_3_Multiplication_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Lab_3_Multiplication_0_0_utilization_synth.rpt -pb Lab_3_Multiplication_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 11 03:23:36 2024...
